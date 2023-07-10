@@ -4,4 +4,8 @@ print("What uP GANGSTA?!")
 #Mains: Exercise 1 
 input("Type some text: ")
 
+#Mains: Exercise 2
+user_input = input("Type some text: \n")
+print(user_input)
+
 
