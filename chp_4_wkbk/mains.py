@@ -19,5 +19,27 @@ else:
     print("I think you need a better fake ID mate - sod off")
 
 
+#Mains: Exercise 2 
+#Working with a single if/elif/else triad 
+
+print("Back again I see; I suggest you stick to soft drinks - what would you like?")
+
+#Player_1 provides a string and this is stored in a variable
+player_1_drink = input("Hurry up ffs I have paying customers to attend to!\n")
+print(f"You want a {player_1_drink}; let me see what we have...")
+
+#NPC drink options are strings; also stored in variables
+npc_drink_option_1 = "Coke" 
+npc_drink_option_2 = "Fanta"
+
+#NPC runs through an if/elif/else block to see whether the bar has the desired drink; if not, Sailor gets kicked to the curb
+if player_1_drink == npc_drink_option_1:
+    print("Can't go wrong with a classic - now bugger off")
+elif player_1_drink == npc_drink_option_2:
+    print("This is actually my fave drink too XD")
+else: 
+    print("Soz mate; now scarper before I clobber ya ears for ya!")
+
+
 
 
