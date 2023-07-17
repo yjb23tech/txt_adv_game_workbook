@@ -17,3 +17,14 @@ ui_int_war_chest_selection = int(input("\nChoose.\n"))
 
 print(f"I can see you have chosen {arr_war_chest[(ui_int_war_chest_selection) - 1]}; it is time to go to war {ui_string_name}, son of Odin")
 
+print("Let me see your weapon... I can tell the strength by feel alone, greenhorn")
+
+if (ui_int_war_chest_selection >= 1) and (ui_int_war_chest_selection < 3):
+    print("This is an attack weapon... wield with caution") 
+else: 
+    print("HAMMER HAHAHA!")
+
+
+
+
+
