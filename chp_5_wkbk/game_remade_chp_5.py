@@ -16,13 +16,13 @@ def play():
         ui_player_command = get_player_command(ui_player_name)
 
         if (ui_player_command.lower() == 'n') or (ui_player_command.lower() == 'north'):
-            print(f"\n{ui_player_command} it is {ui_player_name}... let us move with haste!\n")
+            print(f"\nNorth it is {ui_player_name}... let us move with haste!\n")
         elif (ui_player_command.lower() == 'e') or (ui_player_command.lower() == 'east'):
-            print(f"\n{ui_player_command}? Are you sure? As you wish...\n")
+            print(f"\nEast? Are you sure? As you wish...\n")
         elif (ui_player_command.lower() == 'w') or (ui_player_command.lower() == 'west'):
-            print(f"\nThe Wicked Witch of the {ui_player_command} lies in this direction - we must keep our guard up Asgardian!\n")
+            print(f"\nThe Wicked Witch of the West lies in this direction - we must keep our guard up Asgardian!\n")
         elif (ui_player_command.lower() == 's') or (ui_player_command.lower() == 'south'):
-            print(f"\n{ui_player_command} promises nothing but misery {ui_player_name}\n")
+            print(f"\nSouth promises nothing but misery {ui_player_name}\n")
         else:
             print(f"\nRest {ui_player_name}. Your Odyssey has come to end.\n")
             ui_bool_game_is_on = False
