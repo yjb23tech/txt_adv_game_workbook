@@ -1,7 +1,7 @@
 print("\nAnytime, anyplace\n")
 
 def say_hello(var_name):
-    print("\nSAY HELLO TO MA LUH FWEND\n " + var_name)
+    print("\nSAY HELLO TO MA LUH FWEND " + var_name)
 
 say_hello('GID')
 
@@ -18,5 +18,6 @@ while (ui_bool_game_on == True):
         print("Live another day, and never return")
         ui_bool_game_on = False  
 
+print("The spell has been broken")
 
 
