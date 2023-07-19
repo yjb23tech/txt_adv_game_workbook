@@ -48,6 +48,12 @@ while (ui_bool_calc_is_on == True):
  
     elif (ui_calc_operation.lower() == 'multiply'): 
         print("\nYou have chosen to multiply a pair of values\n")
+        ui_var_x = int(input("\nWhat is your first submission into this calculation?\n"))
+        ui_var_y = int(input("\nWhat is your second submission into this calculation?\n"))
+
+        ui_var_x_y_multiplied = multiply(ui_var_x, ui_var_y)
+        print(f"\nYou provided the values {ui_var_x} and {ui_var_y} multiplication; the result is {ui_var_x_y_multiplied}\n")
+
     elif (ui_calc_operation.lower() == 'divide'):
         print("\nYou have chosen to divide a pair of values\n")
     else:
