@@ -39,7 +39,13 @@ while (ui_bool_calc_is_on == True):
         print(f"\nYou submitted {ui_var_x} and {ui_var_y} to be added together; the result of this calculation is {ui_var_x_y_added}\n")
 
     elif (ui_calc_operation.lower() == 'subtract'):
-        print("\nYou have chosen to subtract a value from another value\n") 
+        print("\nYou have chosen to subtract a value from another value\n")
+        ui_var_x = int(input("\nWhat is your first value in this calculation?\n"))
+        ui_var_y = int(input("\nWhat is your second value in this calculation?\n"))
+
+        ui_var_x_y_subtracted = subtract(ui_var_x, ui_var_y) 
+        print(f"\nYou submitted {ui_var_x} and {ui_var_y} to be subtracted from one another; the result of this calculation is {ui_var_x_y_subtracted}")
+ 
     elif (ui_calc_operation.lower() == 'multiply'): 
         print("\nYou have chosen to multiply a pair of values\n")
     elif (ui_calc_operation.lower() == 'divide'):
