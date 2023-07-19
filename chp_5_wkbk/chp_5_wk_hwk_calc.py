@@ -56,6 +56,11 @@ while (ui_bool_calc_is_on == True):
 
     elif (ui_calc_operation.lower() == 'divide'):
         print("\nYou have chosen to divide a pair of values\n")
+        ui_var_x = int(input("\nWhat is your first value in this calculation?\n"))
+        ui_var_y = int(input("\nWhat is your second value in this calculation?\n"))
+
+        ui_var_x_y_divided = divide(ui_var_x, ui_var_y)
+        print(f"\nYou submitted {ui_var_x} and {ui_var_y} for division; the result of this calculation is {ui_var_x_y_divided}\n")
     else:
         ui_calc_exit = input("\nYou have chosen an option out of the set range; are you sure you'd like to quit? Please press 'q' to confirm\n")
 
