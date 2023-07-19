@@ -26,7 +26,10 @@ while (ui_bool_calc_is_on == True):
     ui_calc_operation = input("\nWhat would you like to do?\n")
 
     if (ui_calc_operation.lower() == 'double'):
-        print("\nYou would like to double your input?\n")
+        ui_var_x = int(input("\nYou have chosen to double your input; what value would you like to double\n"))
+        ui_var_x_doubled = double(ui_var_x)
+        print(f"You chose to double {ui_var_x} and the result of this calculation is {ui_var_x_doubled} - congratulations!")
+ 
     elif (ui_calc_operation.lower() == 'add'):
         print("\nYou have chosen to add together a pair of values")
     elif (ui_calc_operation.lower() == 'subtract'):
