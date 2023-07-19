@@ -22,16 +22,23 @@ for superstar_post_90s in arr_nba_superstars_post_90s:
 #Using the .append() method 
 print("\nAll is not lost however - even now, as we speak, the league is undergoing tectonic shifts and a changing of the guard is imminent\n")
 
-#I declared and initialized an empty list (array) and then passed it into the len() function; I was accurately told the length i.e. size is 0 - I like that!
+#I declared and initialized an empty list (array); at this point in the program, the list has no items inside it - it is empty 
 arr_nba_superstars_future = []
 
+#I passed my empty list into the len() function; I was accurately told the length i.e. the size is '0' 
 #This result of the statement below returns '0' which confirms an arr when declared and initialised but left empty has a length (size) of 0 
 arr_nba_superstars_future_len = len(arr_nba_superstars_future)
 print(f"\nThe current roster for the new superstars contains {arr_nba_superstars_future_len} players; are you ready to change this?\n")
 
 #var_arr_nba_superstars_future_counter = 0 
 
-while ((len(arr_nba_superstars_future)) <= 4):
+#Big Brain: each time this loop runs the conditional provided is checked; the condition fires the len() function and returns the most up to date sizing of the list
+#Big_Brain: each time an item is appended to the array, the size/length of the array is changed; this should be reflected in the value len() returns 
+#Bigger_Brain: I want my loop to run 5 times because there are 5 appendages to be made to the arr to cover the 5 roles in a basketball team
+#Biggest_Brain: my loop must stop running after the 4th iteration because after the 4th iteration the len/size is now 5 - which is why my conditional says <= 4 but < 5 also works (confirmed)
+#Note to Self: the explanation for the above is best visualised using pen and paper lol
+
+while ((len(arr_nba_superstars_future)) < 5):
 
     ui_nba_superstars_future_selection = input(f"\nWho would you like to see at the {(len(arr_nba_superstars_future)) + 1} position?\n") 
     arr_nba_superstars_future.append(ui_nba_superstars_future_selection)
