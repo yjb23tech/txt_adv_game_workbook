@@ -48,6 +48,9 @@ while ((len(arr_nba_superstars_future)) < 5):
 arr_nba_superstars_future_len = len(arr_nba_superstars_future)
 print(f"\nYour roster for future superstars now contains {arr_nba_superstars_future_len} - here's your starting {arr_nba_superstars_future_len}:\n")
 
+for nba_superstar_future in arr_nba_superstars_future:
+    print(f"\nAt the {((arr_nba_superstars_future.index(nba_superstar_future)) + 1)} position we have {nba_superstar_future}\n")
+
 
 print("\nEnd\n") 
 
