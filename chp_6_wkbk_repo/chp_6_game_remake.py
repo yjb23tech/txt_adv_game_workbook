@@ -1,10 +1,14 @@
-print("Rebuilding the game once more, using details from Chp 6")
+#print("Rebuilding the game once more, using details from Chp 6")
 
 def play():
+    arr_player_actions = ['N for North', 'E for East', 'S for South', 'W for West', 'I to view your Inventory', 'Q to quit and exit the game']
     inventory = ['Dagger', 'Gold(5)', 'Crusty Bread']
     ui_bool_game_is_on = True
 
     while (ui_bool_game_is_on == True):
+        print(" ")
+        for action in arr_player_actions:
+            print(f"Press {action}")
 
         ui_player_action = input("\nWhat next, Sailor?\n")
 
