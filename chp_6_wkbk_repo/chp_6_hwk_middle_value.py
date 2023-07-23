@@ -22,7 +22,8 @@ def middle_value(arr_odd_len):
 
         print(f"The middle item in this array is {arr_odd_len[middle_value_loc_index]}") 
 
-arr_test = ['Magic', 'Bird', 'Olajuwon', 'Jordan', 'Ewing']
+arr_test_even = ['Magic', 'Bird', 'Olajuwon', 'Jordan', 'Ewing', 'Kobe']
+arr_test_odd = ['Kyrie', 'Wade', 'LeBron', 'Giannis', 'Jokic']
 
-middle_value(arr_test)
- 
+middle_value(arr_test_even)
+middle_value(arr_test_odd)
