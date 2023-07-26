@@ -6,9 +6,11 @@ more_items = True
 
 def print_starred_list(arr_items_to_list):
 
-    for item in arr_items_to_list:
-        print("* " + str(item))
-
+    #[1] on Loop Counters: using an incrementable var outside of the for loop as a loop counter; once loop is run, var is incremented at very end and new value in i to be used during next loop iteration
+    i = 1   
+    for item in arr_items_to_list: 
+        print(f"*{i} " + str(item))
+        i += 1 
 
 while more_items:
         
