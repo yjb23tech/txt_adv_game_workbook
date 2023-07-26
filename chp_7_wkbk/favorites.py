@@ -4,6 +4,12 @@ arr_favorites = []
 arr_ui_options = ['add a new item', 'quit'] 
 more_items = True 
 
+def print_starred_list(arr_items_to_list):
+
+    for item in arr_items_to_list:
+        print("* " + str(item))
+
+
 while more_items:
         
     print("\nYou have the following options available to you:\n")
@@ -27,7 +33,8 @@ for fave in arr_favorites:
 if (len(arr_favorites) <= 5):
     print("Please proceed into the express lane - ZOOM ZOOM!")
 else:
-    print("You have more than 5 items Sir! You'll have to join the back of the standard main cue I'm afraid!")
+    print("\nYou have more than 5 items Sir! You'll have to join the back of the standard main cue I'm afraid!\n")
 
-print("Thank you for shopping with us today - come back soon!")
+print_starred_list(arr_favorites)
 
+print("\nThank you for shopping with us today - come back soon!\n")
