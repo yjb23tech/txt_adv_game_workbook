@@ -10,6 +10,8 @@ class Person:
     def birth_year(self):
         return (2015 - self.age)
 
+    fav_foods = ['Lamb Shanks', 'Goolash', 'Potatoes']
+
 russian_person = Person()
 
 print(f"Hello my name is {russian_person.name}\n")
