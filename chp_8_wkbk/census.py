@@ -28,5 +28,7 @@ for frank in people_called_frank_soprano:
     sum = sum + frank.int_age
 
 print(f"In my family, there are many other people called {person_frank_soprano.str_name}; altogether, excluding myself, there are an additional {len(people_called_frank_soprano)} men with my name\n")
+print(f"The sum of all of our ages is {sum}")
 
+print(f"The average of all of our ages including myself is {(sum + person_frank_soprano.int_age)/(len(people_called_frank_soprano) + 1)}\n")
 
