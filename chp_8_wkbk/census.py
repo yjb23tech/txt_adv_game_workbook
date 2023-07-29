@@ -21,3 +21,12 @@ print("Food is a large part of my culture; here is a list of my favorite foods:\
 
 person_frank_soprano.list_fav_foods()
 
+people_called_frank_soprano = [Person(), Person(), Person(), Person(), Person()] 
+
+sum = 0 
+for frank in people_called_frank_soprano:
+    sum = sum + frank.int_age
+
+print(f"In my family, there are many other people called {person_frank_soprano.str_name}; altogether, excluding myself, there are an additional {len(people_called_frank_soprano)} men with my name\n")
+
+
