@@ -29,7 +29,18 @@ for crime_boss in crime_bosses:
 
 print("\nBut as this isn't possible - sigh - each Family has it's own unique leader. Come and meet the Head of each family:\n")
 
+for crime_boss in crime_bosses:
+    crime_boss.str_first_name = input(f"My first name is:\n")
+    crime_boss.str_last_name = input(f"My last name is:\n") 
+    crime_boss.int_age = input(f"My age is:\n")
+    print(" ")
+
+for id in range(len(crime_bosses)):
+    print(f"Here we have {crime_bosses[id].str_first_name} of the {crime_bosses[id].str_last_name} family")
+    print(f"He was {crime_bosses[id].int_age} when he became Head of the organisation")
+    print(" ")
 
 
+        
 
  
