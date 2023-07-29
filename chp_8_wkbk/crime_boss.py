@@ -13,10 +13,32 @@ def mb_first_name():
 def mb_age():
     return int(input("\nHow old are you?\n"))
 
+def mb_fav_foods():
+    arr_ui_fav_foods = [] 
+    while (len(arr_ui_fav_foods) < 3):
+        arr_ui_fav_food = input("\nWhat is your fave food Boss?\n")
+        arr_ui_fav_foods.append(arr_ui_fav_food)
+
+    print("Your collection of fave foods is now complete; gracias Senor")
+    return arr_ui_fav_foods 
+
 mb_carmine_lupertazzi = Mob_Boss("Carmine Lupertazzi", 33, ['Seafood Risotto', 'Lasagna'])
 print(f"\nCiao Bella! My name is {mb_carmine_lupertazzi.str_name} and I am {mb_carmine_lupertazzi.int_age} years old\n")
 
-mb_player = Mob_Boss(mb_first_name(), mb_age(), ['King Prawn Linguine', 'Mozarella Balls'])
+#Although both the Objects 'mb_carmine_lupertazzi' and 'mb_player' both use the same Class for instantiation, the manner in which each Object leverages the __init__() method is different
+#In the former, we explicitly declare the params as soon as the Object is created 
+#In the latter, as seen below, we call functions to handle the provision of each parameter; the __init__() method for the Mob_Boss Class takes a str, an int and an arr respectively 
+#The return types of each function called below perfectly maps to the desired data types for the params; this shows us as long as there is parity between the return type of a function and the data types
+#--> required by the function the returnees are being fed into, this architechture will work! Great success! 
+
+mb_player = Mob_Boss(mb_first_name(), mb_age(), mb_fav_foods())
+
 print(f"\nMazel Tov! My name is {mb_player.str_name} and I am {mb_player.int_age} years old\n")
+print("My fave foods can be found below:\n")
+
+for food in mb_player.arr_fav_foods:
+    print(f"I like to eat {food}")
+print(" ")
+
 
 
