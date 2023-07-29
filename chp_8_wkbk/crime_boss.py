@@ -7,6 +7,9 @@ class Mob_Boss:
         self.int_age = int_age
         self.arr_fav_foods = arr_fav_foods 
 
+    def birth_year(self):
+        return (2023 - self.int_age)
+
 def mb_first_name():
     return input("\nWhat is your name?\n")
 
@@ -34,6 +37,7 @@ print(f"\nCiao Bella! My name is {mb_carmine_lupertazzi.str_name} and I am {mb_c
 mb_player = Mob_Boss(mb_first_name(), mb_age(), mb_fav_foods())
 
 print(f"\nMazel Tov! My name is {mb_player.str_name} and I am {mb_player.int_age} years old\n")
+print(f"I was born in the year {mb_player.birth_year()} - a great year to be a gangster")
 print("My fave foods can be found below:\n")
 
 for food in mb_player.arr_fav_foods:
