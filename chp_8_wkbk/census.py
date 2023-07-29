@@ -32,3 +32,19 @@ print(f"The sum of all of our ages is {sum}")
 
 print(f"The average of all of our ages including myself is {(sum + person_frank_soprano.int_age)/(len(people_called_frank_soprano) + 1)}\n")
 
+#Before learning how to work with init, I want you to manually learn how to assign values to an Object using dot operator and indexed based array access 
+
+print(f"My name is currently {people_called_frank_soprano[0].str_name} but I'd like to change it\n")
+
+people_called_frank_soprano[0].str_name = "Tony"
+
+print(f"My name is now {people_called_frank_soprano[0].str_name}; looks good on me right?\n")
+print("You now what, I want to change it again:\n")
+
+carmine_lupertazzi_snr = people_called_frank_soprano[0] 
+carmine_lupertazzi_snr.str_name = "Carmine Lupertazzi"
+
+print(f"My new name is now {carmine_lupertazzi_snr.str_name}; now shudda fuk up abbaout it!\n")
+print(f"And in case you needed reminding, my name is {people_called_frank_soprano[0].str_name} cock sucker!\n")
+
+
