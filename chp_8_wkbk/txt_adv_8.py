@@ -13,7 +13,7 @@ def play():
         for x, action in enumerate(arr_action_options, 1):
             print(f"{x}.Press {action}")
             
-        ui_action = input("\nWhat would you like to do\n")
+        ui_action = get_user_action()
         
         #Compare ui_action against available options; respond accordingly 
         if ui_action in ['NORTH', 'north', 'North', 'N', 'n', '^']:
@@ -40,5 +40,8 @@ def play():
         else:
             print("Invalid input, try again!")
 
+
+def get_user_action():
+    return input("\nWhat would you like to do?\n")
 
 play()
