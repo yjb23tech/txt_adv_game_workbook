@@ -8,6 +8,9 @@ class ProBaller:
         self.str_position = str_position 
         self.arr_special_moves = arr_special_moves 
 
+    def __str__(self):
+        return (f"Name: {self.str_name}, Age: {self.int_age}, Position: {self.str_position}, Special Moves: {self.arr_special_moves}") 
+
     def birth_year(self):
         return (2023 - self.age)
 
@@ -34,6 +37,11 @@ def pb_arr_special_moves():
     return ui_arr_special_moves 
 
 
-carmeo_anthony = ProBaller(pb_str_name(), pb_int_age(), pb_str_position(), pb_arr_special_moves())
+carmelo_anthony = ProBaller(pb_str_name(), pb_int_age(), pb_str_position(), pb_arr_special_moves())
 
+print(" ") 
+print(carmelo_anthony)
+
+print("Let's try again:\n")
+print(f"And here we have:\n{carmelo_anthony}")
     
