@@ -24,6 +24,11 @@ def play():
             print("The cannons to the South are particularly violent Honcho :'S never underestimate the people of the Southern waters XD\n")
         elif ui_action in ['WEST', 'west', 'West', 'W', 'w', '<']:
             print("The Wicked Witch of the West... may GxD be with us all\n")
+        elif ui_action in ['INVENTORY', 'inventory', 'Inventory', 'I', 'i']:
+            print("\nWelcome to your inventory :D here are all of the items you've collected during your pillaging:\n")
+            for x in range(len(arr_inventory_items)):
+                print(f"{x+1}. {arr_inventory_items[x]}")
+            print(" ")
         elif ui_action in ['QUIT', 'quit', 'Quit', 'Q', 'q']:
             print("Jolly Roger! Looks like ya wanna quit - you sure you're ready to drop anchor and call it a day?\n")
             ui_action = input("If you wish to Quit please confirm by typing the word Q-U-I-T; if not, the game will resume as normal:\n")
