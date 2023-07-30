@@ -21,6 +21,8 @@ for x in range(1, 11):
             print(f"The number {y} is not a factor of the number {x}")
     print(f"\nHere are all of the factors of {x}: {arr_factors}\n")
 
+#Find the middle item within an arr of odd length 
+
 arr_odd = ['Luffy', 'Red Shanks', 'Kaido', 'Big Mom', 'Black Beard'] 
 
 print("Within my array, I have the following items:\n")
