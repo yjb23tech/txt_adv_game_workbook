@@ -39,8 +39,10 @@ def fp_arr_special_moves():
     print(" ")
     return (ui_arr_special_moves)
 
+#Create Object
 ui_nfl_player = FootballPlayer(fp_str_name(), fp_int_age(), fp_str_position(), fp_arr_special_moves())
 
+#Print Object 
 print(f"For our Pro Bowl WR {ui_nfl_player.str_name} we have the following stats:\n{ui_nfl_player}")
 
         
