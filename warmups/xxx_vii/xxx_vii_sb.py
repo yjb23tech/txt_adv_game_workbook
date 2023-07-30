@@ -21,7 +21,21 @@ for x in range(1, 11):
             print(f"The number {y} is not a factor of the number {x}")
     print(f"\nHere are all of the factors of {x}: {arr_factors}\n")
 
+arr_odd = ['Luffy', 'Red Shanks', 'Kaido', 'Big Mom', 'Black Beard'] 
+
+print("Within my array, I have the following items:\n")
+for odd in arr_odd:
+    print(f"{(arr_odd.index(odd)) + 1}. {odd}") 
+print(" ")
+
+def middle_of_arr(arr_x):
+    middle_item_loc = int((len(arr_x) + 1) / 2) 
+    middle_item_index = middle_item_loc - 1
+
+    middle_item_value = arr_x[middle_item_index] 
+    return middle_item_value 
+
+print(f"The middle value of my collection is: {middle_of_arr(arr_odd)}")
 
 
-            
 
