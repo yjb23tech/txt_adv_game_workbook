@@ -1,5 +1,6 @@
 #print("Escape from Greed Island")
 
+print("No days off")
 arr_action_options = ['N to travel North', 'E to travel East', 'W to travel West', 'S to travel South', 'I to view the items in your Inventory', 'Q to save and Quit the game'] 
 arr_inventory_items = ['Dagger', 'Broad Sword', 'Healing Herbs', 'Crusty Bread', 'Gold(5)'] 
 
