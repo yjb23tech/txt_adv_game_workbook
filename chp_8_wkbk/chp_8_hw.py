@@ -16,5 +16,6 @@ class Food:
 
 test_chicken_thigh = Food("Chicken Thigh", 100, 200, 300)
 
+print("KillJoy")
 print(test_chicken_thigh)
 print(test_chicken_thigh.total_calorie_count())
